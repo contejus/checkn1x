@@ -3,14 +3,10 @@
 
 Linux-based distribution for jailbreaking iOS devices w/ checkra1n.
 
-## Downloads
-
-Downloads are available under [releases](https://github.com/asineth/checkn1x/releases).
-
 ## Usage
 
 * If you are unsure which one to download, use the ``amd64`` one.
-1. Download [Etcher](https://etcher.io)
+1. Download [Etcher](https://etcher.io) (P.S. I have tried writing the built ISO using Rufus only to encounter a grub rescue screen when booting from the USB.)
 2. Open the ``.iso`` you downloaded.
 3. Write it to your USB drive.
 4. Reboot and enter your BIOS's boot menu.

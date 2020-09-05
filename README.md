@@ -1,31 +1,28 @@
-![](https://raw.githubusercontent.com/asineth/checkn1x/master/icon.png)
+![](https://github.com/contejus/checkn1x/raw/branch/master/icon_dark.png)
+
 # checkn1x
 
 Linux-based distribution for jailbreaking iOS devices w/ checkra1n.
 
-## Downloads
-
-Downloads are available under [releases](https://github.com/asineth/checkn1x/releases).
-
 ## Usage
 
-* If you are unsure which one to download, use the ``amd64`` one.
-1. Download [Etcher](https://etcher.io)
-2. Open the ``.iso`` you downloaded.
+1. Download [Etcher](https://etcher.io) (Rufus isn't compatible with this ISO) and the ISO from releases.
+2. Open the ``.iso`` you downloaded in Etcher.
 3. Write it to your USB drive.
 4. Reboot and enter your BIOS's boot menu.
 5. Select the USB drive.
 
 ## Building
 
-Edit ``ARCH`` and the corresponding ``CRSOURCE``.
-
-Add something to the ``VERSION`` string if you want to redistribute your image, i.e. ``1.0.6-foo``.
+* The ``CRSOURCE`` variable is the direct link to the build of checkra1n that will be used.
+* Add something to the ``VERSION`` variable if you want to redistribute your image, i.e. ``1.0.6-foo``.
 
 ```sh
-# debian-based systems
-sudo ./build.sh
+# debian/ubuntu/mint/etc.
+apt install curl ca-certificates tar gzip grub2-common grub-pc-bin grub-efi-amd64-bin
 
-# docker containers
-docker run -it -v $(pwd):/app --rm --privileged debian:sid "cd /app && /app/build.sh"
+# archlinux
+pacman -S --needed curl tar gzip grub mtools xorriso cpio xz
+
+sudo ./build.sh
 ```

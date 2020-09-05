@@ -6,8 +6,9 @@ Linux-based distribution for jailbreaking iOS devices w/ checkra1n.
 
 ## Usage
 
-1. Download [Etcher](https://etcher.io) (Rufus isn't compatible with this ISO) and the ISO from releases.
-2. Open the ``.iso`` you downloaded in Etcher.
+* If you are unsure which one to download, use the ``amd64`` one.
+1. Download [Etcher](https://etcher.io) (P.S. I have tried writing the built ISO using Rufus only to encounter a grub rescue screen when booting from the USB.)
+2. Open the ``.iso`` you downloaded.
 3. Write it to your USB drive.
 4. Reboot and enter your BIOS's boot menu.
 5. Select the USB drive.
